@@ -2266,7 +2266,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toggle Model
+  m_Text: Toggle Model Visibility
 --- !u!222 &1561104881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2343,7 +2343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Account Balance: '
+  m_Text: 
 --- !u!222 &1668551015
 CanvasRenderer:
   m_ObjectHideFlags: 0
