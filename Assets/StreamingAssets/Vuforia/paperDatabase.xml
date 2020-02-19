@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="10poundsback" size="5.000000 2.634409" />
+    <ImageTarget name="5poundsback" size="5.000000 2.530364" />
+    <ImageTarget name="pound2Target" size="5.000000 2.584670" />
+    <ImageTarget name="poundTarget" size="5.000000 2.614601" />
+  </Tracking>
+</QCARConfig>
