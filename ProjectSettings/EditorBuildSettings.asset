@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: d5c1fcacc0110ac4a84d26e6090828e9
+  - enabled: 1
+    path: Assets/Scenes/VuforiaPrototype.unity
+    guid: d46f29fc727bec145aa0d4b3f5815858
+  - enabled: 1
+    path: Assets/Scenes/Prototype2.unity
+    guid: 06e77b69034acab42a30f250a52dad31
+  - enabled: 1
+    path: Assets/Scenes/BlockchainConnection.unity
+    guid: daaf1e27ac6527d41b5d88451db3bc7c
   m_configObjects: {}

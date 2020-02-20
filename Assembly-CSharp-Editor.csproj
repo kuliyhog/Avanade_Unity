@@ -340,65 +340,86 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Vuforia.UnityExtensions.Editor">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Library/PackageCache/com.ptc.vuforia.engine@8.6.7/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Library/PackageCache/com.ptc.vuforia.engine@8.6.7/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Security.Cryptography.Algorithms.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.RPC">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.RPC.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.Accounts">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Accounts.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.Model">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.JsonRpc.WebSocketClient">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.JsonRpc.WebSocketClient.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Security.Cryptography.X509Certificates.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.Geth">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Geth.dll</HintPath>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Common.Logging.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Logging.Abstractions">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Nethereum.RLP">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.RLP.dll</HintPath>
+    <Reference Include="NBitcoin">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/NBitcoin.dll</HintPath>
     </Reference>
     <Reference Include="Nethereum.ABI">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.ABI.dll</HintPath>
     </Reference>
+    <Reference Include="Nethereum.Accounts">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Accounts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Contracts">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Geth">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Geth.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.HdWallet">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.HdWallet.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Hex">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Hex.dll</HintPath>
+    </Reference>
     <Reference Include="Nethereum.JsonRpc.Client">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.JsonRpc.Client.dll</HintPath>
     </Reference>
-    <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Security.Cryptography.Encoding.dll</HintPath>
+    <Reference Include="Nethereum.JsonRpc.IpcClient">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.JsonRpc.IpcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.RpcClient">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.JsonRpc.RpcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.JsonRpc.WebSocketClient">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.JsonRpc.WebSocketClient.dll</HintPath>
     </Reference>
     <Reference Include="Nethereum.KeyStore">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.KeyStore.dll</HintPath>
     </Reference>
+    <Reference Include="Nethereum.Model">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Parity">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Parity.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Quorum">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Quorum.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.RLP">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.RLP.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.RPC">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.RPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Nethereum.Signer">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Signer.dll</HintPath>
+    </Reference>
     <Reference Include="Nethereum.StandardTokenEIP20">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.StandardTokenEIP20.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Nethereum.Unity">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Unity.dll</HintPath>
     </Reference>
     <Reference Include="Nethereum.Util">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Util.dll</HintPath>
     </Reference>
+    <Reference Include="Nethereum.Web3">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Web3.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Security.Cryptography.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Pipes">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.IO.Pipes.dll</HintPath>
@@ -406,44 +427,23 @@
     <Reference Include="System.Numerics">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Numerics.dll</HintPath>
     </Reference>
-    <Reference Include="Common.Logging.Core">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Common.Logging.Core.dll</HintPath>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Security.Cryptography.Algorithms.dll</HintPath>
     </Reference>
-    <Reference Include="Nethereum.Quorum">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Quorum.dll</HintPath>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Security.Cryptography.Encoding.dll</HintPath>
     </Reference>
-    <Reference Include="Nethereum.Contracts">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Contracts.dll</HintPath>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Security.Cryptography.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="BouncyCastle.Crypto">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/BouncyCastle.Crypto.dll</HintPath>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/System.Security.Cryptography.X509Certificates.dll</HintPath>
     </Reference>
-    <Reference Include="Nethereum.JsonRpc.RpcClient">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.JsonRpc.RpcClient.dll</HintPath>
+    <Reference Include="Vuforia.UnityExtensions.Editor">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Library/PackageCache/com.ptc.vuforia.engine@8.6.7/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Nethereum.Hex">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Hex.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.JsonRpc.IpcClient">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.JsonRpc.IpcClient.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.Parity">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Parity.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.HdWallet">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.HdWallet.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.Unity">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="NBitcoin">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/NBitcoin.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.Signer">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Signer.dll</HintPath>
-    </Reference>
-    <Reference Include="Nethereum.Web3">
-      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Assets/Plugins/Nethereum.Web3.dll</HintPath>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Library/PackageCache/com.ptc.vuforia.engine@8.6.7/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/bobluo/UCL/Year2/SystemsEngineering(COMP0016)/Avanade/Prototype2/Prototype2/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

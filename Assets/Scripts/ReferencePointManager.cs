@@ -12,8 +12,6 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ReferencePointManager : MonoBehaviour
 {
-    [SerializeField]
-    private Text debugLog;
 
     [SerializeField]
     private Text referencePointCount;
@@ -59,7 +57,6 @@ public class ReferencePointManager : MonoBehaviour
             if (referencePoint == null){
                 string errorEntry = "There was an error creating a reference point";
                 Debug.Log(errorEntry);
-                debugLog.text += errorEntry;
             }
             else {
                 referencePoints.Add(referencePoint);
