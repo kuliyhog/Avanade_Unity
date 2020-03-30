@@ -18,6 +18,8 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField]
     private Button blockchainButton;
 
+    [SerializeField]
+    private Button blobStorageButton;
 
     [SerializeField]
     private GameObject featureNotImplementedPanel;
@@ -32,6 +34,7 @@ public class MainMenuManager : MonoBehaviour
         reactButton.onClick.AddListener(LinkToReact);
         okayButton.onClick.AddListener(DisablePanel);
         blockchainButton.onClick.AddListener(LinkToBlockchain);
+        blobStorageButton.onClick.AddListener(LinkToBlobStorage);
     }
 
     private void LinkToVuforia() {
@@ -48,6 +51,12 @@ public class MainMenuManager : MonoBehaviour
     {
         PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("BlockchainConnection");
+    }
+
+    private void LinkToBlobStorage()
+    {
+        PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("BlobStorage");
     }
 
 

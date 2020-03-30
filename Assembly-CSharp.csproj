@@ -64,11 +64,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackButtonScript.cs" />
-    <Compile Include="Assets\Scripts\BlockchainConnectionManager.cs" />
+    <Compile Include="Assets\Scripts\BlobStorageInteraction.cs" />
+    <Compile Include="Assets\Scripts\BlockchainContractInteraction.cs" />
     <Compile Include="Assets\Scripts\MainMenuManager.cs" />
     <Compile Include="Assets\Scripts\ModelManager.cs" />
     <Compile Include="Assets\Scripts\ReferencePointManager.cs" />
     <Compile Include="Assets\Scripts\RetrieveBalance.cs" />
+    <Compile Include="Assets\Scripts\ServerSettings.cs" />
+    <Compile Include="Assets\Scripts\SmartContractManager.cs" />
     <Compile Include="Assets\Scripts\ToggleVisibility.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
