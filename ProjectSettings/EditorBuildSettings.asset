@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlockchainConnection.unity
     guid: daaf1e27ac6527d41b5d88451db3bc7c
+  - enabled: 1
+    path: Assets/Scenes/BlobStorage.unity
+    guid: 8a2e9636c2be1104fb946f7ffb1a4cb8
   m_configObjects: {}
