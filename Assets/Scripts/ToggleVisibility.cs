@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ToggleVisibility : MonoBehaviour
@@ -14,7 +12,6 @@ public class ToggleVisibility : MonoBehaviour
 
     void Awake()
     {
-        // add try catch phrase for null pointer exception -- not urgent
         toggleVisibilityButton.onClick.AddListener(TogglePrefab);
     }
 
@@ -24,16 +21,4 @@ public class ToggleVisibility : MonoBehaviour
         prefabHouse.SetActive(!isActive);
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

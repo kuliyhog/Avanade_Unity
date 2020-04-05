@@ -26,13 +26,21 @@ public class BlobStorageInteraction : MonoBehaviour
         retrieveFromBlockchainButton.onClick.AddListener(DisplayData);
     }
 
+
+    // Function to getHash from blockchain and display the results
     private async void DisplayData()
     {
         var result = await RetrieveFromBlockchain();
-        consoleMessage.text = "GetHash/Download Link: " + result;
-        Debug.Log(consoleMessage.text);
+        if (result != null)
+        {
+            consoleMessage.text = "GetHash/Download Link: " + result;
+        }
+        else {
+            consoleMessage.text = "Error: Check Debug Log\nPossibly no internet access!";
+        }
     }
 
+    // Function to download file and display contents
      private async void Download()
     {
         string downloadLink = await RetrieveFromBlockchain();
@@ -45,6 +53,7 @@ public class BlobStorageInteraction : MonoBehaviour
 
         if (www.isNetworkError || www.isHttpError)
         {
+            consoleMessage.text = "Error: Check Debug Log\nPossibly no internet access!";
             Debug.Log(www.error);
         }
         else
@@ -55,20 +64,29 @@ public class BlobStorageInteraction : MonoBehaviour
         }
     }
 
+    // Function to retreive data form the blockchain
     private async Task<string> RetrieveFromBlockchain()
     {
         QuorumSettings qs = new QuorumSettings();
         WalletSettings ws = new WalletSettings();
-        var account = await BlockchainContractInteraction.GetAccount();
-        var managedAccount = new ManagedAccount(account.Address, ws.Password);
-        var web3Managed = new Web3(managedAccount, qs.UrlWithAccessKey);
-        var web3 = new Web3(account, qs.UrlWithAccessKey);
-        var contract = web3.Eth.GetContract(qs.ContractAbi, qs.ContractAddress);
+        try
+        {
+            var account = await BlockchainContractInteraction.GetAccount();
+            var managedAccount = new ManagedAccount(account.Address, ws.Password);
+            var web3Managed = new Web3(managedAccount, qs.UrlWithAccessKey);
+            var web3 = new Web3(account, qs.UrlWithAccessKey);
+            var contract = web3.Eth.GetContract(qs.ContractAbi, qs.ContractAddress);
 
-        var functionSet = contract.GetFunction("getHash");
-        var result = await functionSet.CallAsync<string>(2);
+            var functionSet = contract.GetFunction("getHash");
+            var result = await functionSet.CallAsync<string>(2);
+            return result;
+        }
+        catch (System.Exception e) {
+            consoleMessage.text = "Error: Check Debug Log\nPossibly no internet access!";
+            Debug.Log(e);
+            return null;
+        }
 
-        return result;
     }
 
 }

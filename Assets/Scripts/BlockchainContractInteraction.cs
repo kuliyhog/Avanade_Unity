@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Nethereum.Web3;
-using Nethereum.Quorum;
 using ServerSettings;
 using System.Threading.Tasks;
 using Nethereum.Web3.Accounts;
@@ -38,6 +36,7 @@ namespace BCI {
             transferEthButton.onClick.AddListener(TransferEther);
         }
 
+        // setup a wallet and get an account for the transactions
         static public async Task<Account> GetAccount()
         {
 
@@ -68,17 +67,18 @@ namespace BCI {
                 var etherAmount = Web3.Convert.FromWei(balance.Value);
                 var print = $"Account Balance of {account.Address} on Ropsten Test Network\nBalance in Wei: {balance.Value}\nBalance in Ether: {etherAmount}";
                 consoleMessage.text = print;
-                Debug.Log(print);
             }
             catch (System.Exception e)
             {
-                consoleMessage.text = "Error: Check Debug Log";
+                consoleMessage.text = "Error: Check Debug Log\nPossibly no internet access!";
                 Debug.Log(e);
             }
 
 
         }
 
+
+        // transfer 0.01ether from sender to receiver
         private async void TransferEther()
         {
             MetamaskSettings ms = new MetamaskSettings();
@@ -90,7 +90,6 @@ namespace BCI {
                 var balance = await web3.Eth.GetBalance.SendRequestAsync(account.Address);
                 var balance2 = await web3.Eth.GetBalance.SendRequestAsync(ms.PublicKey);
                 var print = "The account balance of Sender " + account.Address + "is: " + balance.Value + "\nThe account balance of Receiver " + ms.PublicKey + " is: " + balance2.Value;
-                Debug.Log(print);
                 consoleMessage.text = print;
 
                 var toAddress = ms.PublicKey;
@@ -99,7 +98,6 @@ namespace BCI {
                 consoleMessage.text = print;
 
                 print = $"Transaction {transactionReceipt.TransactionHash} for amount of 0.01 Ether completed";
-                Debug.Log(print);
                 consoleMessage.text = print;
                 balance = await web3.Eth.GetBalance.SendRequestAsync(account.Address);
                 balance2 = await web3.Eth.GetBalance.SendRequestAsync(ms.PublicKey);
@@ -107,12 +105,11 @@ namespace BCI {
                 await Task.Delay(2000);
 
                 print = "New account balance of Sender " + account.Address + "is: " + balance.Value + "\nNew account balance of Receiver " + ms.PublicKey + " is: " + balance2.Value;
-                Debug.Log(print);
                 consoleMessage.text = print;
             }
             catch (System.Exception e)
             {
-                consoleMessage.text = "Error: Check Debug Log";
+                consoleMessage.text = "Error: Check Debug Log\nPossibly no internet access!";
                 Debug.Log(e);
             }
             
@@ -134,16 +131,17 @@ namespace BCI {
                 var result = await functionSet.CallAsync<string>(22);
                 var print = "getHash(22) contract function returns: " + result;
                 consoleMessage.text = print;
-                Debug.Log(print);
             }
             catch (System.Exception e)
             {
-                consoleMessage.text = "Error: Check Debug Log";
+                consoleMessage.text = "Error: Check Debug Log\nPossibly no internet access!";
                 Debug.Log(e);
             }
             
         }
 
+
+        
         private async void QuorumContractInteraction()
         {
             QuorumSettings qs = new QuorumSettings();
@@ -156,22 +154,16 @@ namespace BCI {
             try
             {
                 var blockNumber = await web3Managed.Eth.Blocks.GetBlockNumber.SendRequestAsync();
-                var print = "Current BlockNumber: " + blockNumber.Value;
-
-                Debug.Log("Current Block Number: " + blockNumber.Value);
-                
+                var print = "Current BlockNumber: " + blockNumber.Value;                
 
                 var balance = await web3Managed.Eth.GetBalance.SendRequestAsync(account.Address);
                 print += "\n" + "Account Balance of " + account.Address + " on Quorum: " + Web3.Convert.FromWei(balance.Value);
-
-                Debug.Log("Account Balance on Azure Quorum for " + account.Address + ": " + balance);
 
                 var contract = web3Managed.Eth.GetContract(qs.ContractAbi, qs.ContractAddress);
 
                 var functionSet = contract.GetFunction("getLatestFileIndex");
                 var result = await functionSet.CallAsync<int>();
 
-                Debug.Log("getLatestFileIndex(): " + result);
                 print += $"\ngetLatestFileIndex(): " + result;
 
                 consoleMessage.text = print;
@@ -179,7 +171,7 @@ namespace BCI {
             }
             catch (Exception e)
             {
-                consoleMessage.text = "Error: Check Debug Log";
+                consoleMessage.text = "Error: Check Debug Log\nPossibly no internet access!";
                 Debug.Log(e);
             }
         }
