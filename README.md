@@ -16,6 +16,6 @@
 6. And you're set to further develop on this application!
 
 
-## 2. To deploy the application
+## 2. To deploy the application for testing
 
 1. Simply download the apk and install it on your android device with Nougat 7.0 or higher that supports Google ARCore.
