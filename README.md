@@ -1,5 +1,7 @@
 # Avanade_Unity
 
+## 1. To further develop this project
+
 
 1. Clone the project
 
@@ -7,9 +9,13 @@
 
 3. Fill in the blanks in the ServerSettings.cs with the information required.
 
-3. Copy and paste the ServerSettings.cs file into your ```Assets/Scripts/``` folder along with the other scripts
+4. Copy and paste the ServerSettings.cs file into your ```Assets/Scripts/``` folder along with the other scripts
 
-4. Import project into Unity
+5. Import project into Unity
+
+6. And you're set to further develop on this application!
 
 
-5. And you're set to further develop on this application!
+## 2. To deploy the application
+
+1. Simply download the apk and install it on your android device with Nougat 7.0 or higher that supports Google ARCore.
